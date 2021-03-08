@@ -42,8 +42,6 @@ def roll_the_dice():
     ui.text_box.append(
         f'your roll was {player_roll} \nthe computers roll was {computer_result}')
 
-# testing something
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

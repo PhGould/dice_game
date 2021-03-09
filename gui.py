@@ -15,22 +15,15 @@ low = 1
 high = 6
 
 
-def dice_roll(low, high):
-    player_roll = random.randint(low, high)
-    return player_roll
-    # exit()
-
-
-def computer_roll(low, high):
-    computer_result = random.randint(low, high)
-    return computer_result
+def generate_roll(minimum, maximum):
+    return random.randint(minimum, maximum)
 
 
 def roll_the_dice():
     ui.text_box.setText('You roll the dice...')
     time.sleep(1)
-    computer_result = computer_roll(low, high)
-    player_roll = dice_roll(low, high)
+    computer_result = generate_roll(low, high)
+    player_roll = generate_roll(low, high)
     if player_roll == computer_result:
         ui.text_box.append('Tie')
     elif player_roll > computer_result:

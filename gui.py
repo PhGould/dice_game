@@ -11,9 +11,6 @@ import time
 import random
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-low = 1
-high = 6
-
 
 def generate_roll(minimum, maximum):
     return random.randint(minimum, maximum)
@@ -79,6 +76,9 @@ stylesheet = """
             background-position: center;
         }
         """
+
+low = 1
+high = 6
 
 if __name__ == "__main__":
     import sys

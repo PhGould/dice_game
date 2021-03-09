@@ -30,8 +30,6 @@ def roll_the_dice():
         ui.text_box.append('You Won!')
     else:
         ui.text_box.append('You lose...')
-    print(f'your roll was {player_roll}')
-    print(f'the computers roll was {computer_result}')
     ui.text_box.append(
         f'your roll was {player_roll} \nthe computers roll was {computer_result}')
 
